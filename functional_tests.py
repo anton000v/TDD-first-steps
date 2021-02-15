@@ -9,7 +9,7 @@ class NewVisitorTest(unittest.TestCase):
     def setUp(self):
         self.browser = webdriver.Firefox(executable_path=GeckoDriverManager().install())
         print('Try to clear all page cache')
-        self.browser.delete_all_cookies();
+        self.browser.delete_all_cookies()
 
     def tearDown(self):
         self.browser.quit()
